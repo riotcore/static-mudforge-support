@@ -21,6 +21,25 @@ MudForge Lua plugin, a terrain color pack, and an offline terrain fix tool.
 
 **No rewalking, zone deletion, new VNUMs or server copyover is needed.**
 
+## Troubleshoot: repository validated but plugin is missing
+
+**Validating/adding a repository is not the same as installing a plugin.**
+A green "Found 1 plugin" response establishes that the catalog is readable,
+but does not prove that Stillwake Map Companion is enabled in the current
+MudForge client. In the plugin manager, switch to its **browse/available**
+plugins view (rather than only installed plugins), clear search/category
+filters, and locate **Stillwake Map Companion** under the STATIC / Stillwake
+source. Install and enable it. The command `/swmap` must print the version
+and diagnostics. If the MUD replies `Unknown command`, the client did not
+intercept `/swmap`; do not ask the MUD server to be updated.
+
+If the repository still does not appear in your client, skip the repository
+browser entirely and import `static_map_companion.lua` from this package
+via MudForge's local-plugin import/editor. Do not import the terrain JSON as
+a Lua plugin; import it separately in the map's terrain color settings.
+The CLI output is a read-only diagnostic, not an automatic map repair.
+Never reset the map to troubleshoot a missing plugin.
+
 ## Install the plugin now (download ZIP, no GitHub required)
 
 1. Extract the ZIP. In MudForge, go to **Settings -> Plugins** and use the
