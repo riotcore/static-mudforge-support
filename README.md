@@ -40,6 +40,26 @@ a Lua plugin; import it separately in the map's terrain color settings.
 The CLI output is a read-only diagnostic, not an automatic map repair.
 Never reset the map to troubleshoot a missing plugin.
 
+## Windows desktop: repository validates but plugin is not listed
+
+A green "repository validated / found 1 plugin" message only verifies the
+public `plugins.json` catalog. If the plugin never appears in the client,
+stop repeatedly adding the repository. `/swmap` returning the MUD's
+"Unknown command" means MudForge did not register the client command.
+
+MudForge supports loading Lua files from its native application plugin
+directory. The installed Lua filename should match the plugin display name:
+`Stillwake Map Companion.lua`. On Windows, Tauri normally uses
+`%APPDATA%\\com.mudforge.app\\plugins` (some installations use Local app
+data); verify an existing MudForge application-data directory before writing.
+Extract the `script` from
+`dist/stillwake-map-companion.json` and place it there. Restart MudForge to
+load the file. Do **not** try importing Lua into the JSON-only layout picker.
+Do not delete any saved map or use server COPYOVER to solve this.
+
+The diagnostics command `/swmap` is read-only. Restyling cached map tiles
+is a separate operation with the bundled export-repair tool.
+
 ## Install the plugin now (download ZIP, no GitHub required)
 
 1. Extract the ZIP. In MudForge, go to **Settings -> Plugins** and use the
