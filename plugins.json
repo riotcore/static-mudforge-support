@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "STATIC / Stillwake for MudForge",
+  "description": "Public, client-only companion and terrain colors. No STATIC game sources.",
+  "homepage": "https://github.com/riotcore/static-mudforge-support",
+  "pluginCount": 1,
+  "plugins": [
+    {
+      "id": "stillwake-map-companion",
+      "name": "Stillwake Map Companion",
+      "version": "1.0.0",
+      "author": "STATIC",
+      "description": "Read-only GMCP room/terrain diagnostics. No mapper mutations.",
+      "category": "utilities",
+      "downloadUrl": "https://raw.githubusercontent.com/riotcore/static-mudforge-support/main/dist/stillwake-map-companion.json",
+      "format": "json",
+      "sha256": "060c76f4c758ee837a2e366a7d98c5a76f276743dff1ed0979e09e8df6078785",
+      "size": 2951,
+      "homepage": "https://github.com/riotcore/static-mudforge-support"
+    }
+  ]
+}

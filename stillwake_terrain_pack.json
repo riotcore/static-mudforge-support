@@ -1,0 +1,70 @@
+{
+  "name": "Stillwake terrain colors for MudForge",
+  "description": "Optional client-side colors matching GMCP Room.Info.terrain. No gameplay or map data.",
+  "terrainStyles": [
+    {
+      "name": "default",
+      "color": "#3b82f6"
+    },
+    {
+      "name": "inside",
+      "color": "#374151"
+    },
+    {
+      "name": "field",
+      "color": "#4d865c"
+    },
+    {
+      "name": "forest",
+      "color": "#176d5a"
+    },
+    {
+      "name": "water",
+      "color": "#2563eb"
+    },
+    {
+      "name": "city",
+      "color": "#8b5cf6"
+    },
+    {
+      "name": "road",
+      "color": "#64748b"
+    },
+    {
+      "name": "promenade",
+      "color": "#47a6a0"
+    },
+    {
+      "name": "beach",
+      "color": "#d7bc83"
+    },
+    {
+      "name": "boardwalk",
+      "color": "#a58b68"
+    },
+    {
+      "name": "dock",
+      "color": "#a27453"
+    },
+    {
+      "name": "marina",
+      "color": "#348baf"
+    },
+    {
+      "name": "ferry",
+      "color": "#5b87b2"
+    },
+    {
+      "name": "park",
+      "color": "#65a36e"
+    },
+    {
+      "name": "station",
+      "color": "#b08dc5"
+    },
+    {
+      "name": "venue",
+      "color": "#986dba"
+    }
+  ]
+}
